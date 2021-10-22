@@ -16,13 +16,5 @@
  3. ห้าม Contribute ด้วยการแปะข้อมูลอื่นๆ ที่ไม่ใช่ Code
  4. Have fun!
 
-### 🤖  ‍Contribution Guide
- 1. List item
- 2. IDK
- 3. Some Code
-	 ```python
-	 print("Hello World!")
-	 ```
-4. เอาเท่ๆ
 ---
 Made With 🧠 By [IT Experience Club](https://github.com/IT-Experience-Club)
