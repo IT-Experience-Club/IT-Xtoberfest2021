@@ -1,0 +1,111 @@
+body {
+  background-image: url("https://media.discordapp.net/attachments/806442516307902495/806874321288691763/90_20210204152045.png?width=717&height=335");
+  background-size: 100vw 100vh;
+  background-position: top center;
+}
+
+.background {
+  position: absolute;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  height: 100vh;
+  width: 90vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.platform {
+  height: 230px;
+  width: 100%;
+  background-image: url("https://media.discordapp.net/attachments/806442516307902495/807611387563999272/PngItem_4610714.png?width=717&height=158");
+  margin-top: -65px;
+  background-size: cover;
+}
+
+.t_rex {
+  height: 120px;
+  width: 150px;
+  left: 50%;
+  margin: auto;
+  margin-top: 340px;
+  background-image: url("https://cdn.discordapp.com/attachments/806442516307902495/807077361891541023/20210204_223459.gif");
+  background-size: cover;
+}
+
+.box_input {
+  margin: auto;
+  margin-top: -65px;
+  height: 40px;
+  width: 50vw;
+}
+
+.box_input input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+}
+
+a-word {
+  --l: 0;
+  background-image: url("https://media.discordapp.net/attachments/806442516307902495/807237131054350336/87_20210205163740.png?width=397&height=397");
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  background-position: top center;
+  height: 80px;
+  width: 100px;
+  text-align: center;
+  padding: 1em;
+  margin: 0.2em 5.5em;
+  position: absolute;
+  top: -10%;
+  left: calc(var(--l) * 10%);
+  transition: top 2s linear;
+  z-index: -1;
+  opacity: 1;
+}
+
+.life {
+  position: absolute;
+  right: 2%;
+  top: 5%;
+  display: flex;
+}
+
+.heart {
+  background-image: url("https://media.discordapp.net/attachments/798903401223028736/807591046334775296/heart-png.png?width=399&height=397");
+  background-position: top center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.show-end::after {
+  content: "Click To Restart";
+  text-align: center;
+  display: flex;
+  margin-top: -150px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 150px;
+  color: red;
+  font-family: "Yusei Magic", sans-serif;
+  animation: boop 2s infinite;
+}
+
+@keyframes boop {
+  0%,
+  100% {
+    transform: scale(0.5) rotateZ(5deg);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.score {
+  font-size: 50px;
+  font-family: "Yusei Magic", sans-serif;
+}
