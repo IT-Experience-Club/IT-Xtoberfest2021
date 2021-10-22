@@ -23,6 +23,6 @@
 	 ```python
 	 print("Hello World!")
 	 ```
-4. เท่ๆ
+4. เอาเท่ๆ
 ---
 Made With 🧠 By [IT Experience Club](https://github.com/IT-Experience-Club)
