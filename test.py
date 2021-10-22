@@ -1,1 +1,0 @@
-print("Good luck have fun")
