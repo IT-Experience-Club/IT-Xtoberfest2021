@@ -22,7 +22,7 @@ npm run build
 
 ## List of stuff to say hello to
 
-Yon can directly add something to this list.
+Yon can directly add something to this list. ```text only```
 
 - Jabont
 - Contributors
@@ -43,4 +43,4 @@ Yon can directly add something to this list.
 - Dracula
 - Can I commit?
 - Dummy !
-- Lucifer 😈
+- Lucifer
