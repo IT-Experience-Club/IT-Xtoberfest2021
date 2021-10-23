@@ -1,6 +1,6 @@
 ## What on earth can we say hello to ? 🤔
 
-This is only a stupid hack for hacktoberfest (ITExperience). Concept inspired by [manoonchai](https://github.com/Manoonchai).
+This is only a stupid hack for hacktoberfest (ITExperience). Concept inspired by [Manoonchai/Daimai](https://github.com/Manoonchai).
 
 ---
 

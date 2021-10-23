@@ -64,8 +64,6 @@
 
   import { time, elapsed } from "./component/stores";
 
-  import { fly } from "svelte/transition";
-  let visible = false;
 </script>
 
 <main>
@@ -83,9 +81,11 @@
       {/if}
     </div>
 
+    <!-- svelte-ignore missing-declaration -->
     <button
       class="btn btn-outline-dark my-4"
-      on:click={randomDataId},{visible=true}
+      on:click={randomDataId}
+
       use:pannable
       on:panstart={handlePanStart}
       on:panmove={handlePanMove}
@@ -97,11 +97,11 @@
       Random
     </button>
 
-    {#if visible}
-      <h6 class="hint" transition:fly={{ y: 200, duration: 2000 }}>
-        <b>drag the button</b>
+
+      <h6 class="hint">
+        <b> try drag the button anywhere</b>
       </h6>
-    {/if}
+
     <div class="timeIsmobile">
       <h6>
         You have been checking out my project for
@@ -115,7 +115,7 @@
     <div>
       {#each links as link}
         <h5>
-          <a class="text-dark" href="https://github.com/santhitak">{link}</a>
+          <a class="text-dark" href="https://github.com/santhitak" target="_blank">{link}</a>
         </h5>
       {/each}
     </div>

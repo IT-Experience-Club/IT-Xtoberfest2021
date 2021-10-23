@@ -12,6 +12,8 @@ body {
 	padding: 8px;
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
+
+	overflow-x: hidden;
 }
 
 a {
