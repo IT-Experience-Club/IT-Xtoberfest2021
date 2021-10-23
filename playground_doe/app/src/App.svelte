@@ -185,6 +185,11 @@
       display: none;
     }
   }
+  @media (max-width: 1024px) {
+    .hint {
+      display: none;
+    }
+  }
   @media (max-width: 800px) {
     main {
       max-width: 500px;
