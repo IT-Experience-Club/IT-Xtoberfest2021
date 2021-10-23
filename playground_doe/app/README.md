@@ -24,11 +24,11 @@ npm run build
 
 Yon can directly add something to this list.
 
-    - Jabont
-    - Contributors
-    - Hack
-    - Soy sauce packet
-    - Ex-girlfriend
-    - Cupid
-    - PR
+- Jabont
+- Contributors
+- Hack
+- Soy sauce packet
+- Ex-girlfriend
+- Cupid
+- PR
 
