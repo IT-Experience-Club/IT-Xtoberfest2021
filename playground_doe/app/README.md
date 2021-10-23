@@ -36,7 +36,7 @@ Yon can directly add something to this list.
 - World
 - , Goodbye
 - , Don't touch me
-- , Alien
-- , Boys
+- Alien
+- Boys
 - , Down to eat?
 - , Wanna go out with me?
