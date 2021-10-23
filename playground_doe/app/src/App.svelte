@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte"
+	const links = ['Github'];
 
 	let stuff_list = []
 	let stuff_id = 0
@@ -14,21 +15,13 @@
   const setData = (id) => {
     stuff_id = id
   }
-  let copied = false
-  const copyLink = () => {
-    navigator.clipboard.writeText(window.location.origin + "?id=" + stuff_id)
-    copied = true
-    setTimeout(() => {
-      copied = false
-    }, 1500)
-  }
   onMount(async () => {
     const res = await fetch(`https://raw.githubusercontent.com/santhitak/IT-Xtoberfest2021/main/playground_doe/app/README.md`)
     const data_text = await res.text()
     stuff_list = data_text
       .split("\n")
-      .filter((line) => line.startsWith("    - "))
-      .map((line) => line.split("    - ")[1])
+      .filter((line) => line.startsWith("- "))
+      .map((line) => line.split("- ")[1])
     const urlParams = new URLSearchParams(window.location.search)
     const id = parseInt(urlParams.get("id"))
     if (id != null && id < stuff_list.length) {
@@ -58,6 +51,14 @@
 		on:click={randomDataId}
 	>
 	Random</button>
+
+	<div class="footer">
+		<div>
+			{#each links as link}
+			<h5><a class="text-dark" href="https://github.com/santhitak">{link}</a></h5>
+			{/each}
+		</div>
+	</div>
 </main>
 
 <style>
@@ -74,6 +75,18 @@
 		font-weight: 100;
 	}
 
+	.footer{
+		padding: 1rem;
+
+		position: absolute;
+		bottom: 0;
+	}
+
+	.footer a{
+		text-decoration: none;
+		color: #333;
+	}
+
 	.container .helloBox{
 		margin: auto;
 		display: flex;
@@ -87,3 +100,4 @@
 		}
 	}
 </style>
+
