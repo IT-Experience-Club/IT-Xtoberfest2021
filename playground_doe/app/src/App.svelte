@@ -35,7 +35,7 @@
 <main>
 	<div class="container">
 		<div class="helloBox">
-			<h1>Hello &nbsp;</h1>
+			<h1>Hello&nbsp;</h1>
 			{#if stuff_list[stuff_id] != undefined}
 			  <h1 class="">
 				{stuff_list[stuff_id]}
