@@ -65,8 +65,7 @@
   import { time, elapsed } from "./component/stores";
 
   import { fly } from "svelte/transition";
-
-  let visible = true;
+  let visible = false;
 </script>
 
 <main>
@@ -86,7 +85,7 @@
 
     <button
       class="btn btn-outline-dark my-4"
-      on:click={randomDataId}
+      on:click={randomDataId},{visible=true}
       use:pannable
       on:panstart={handlePanStart}
       on:panmove={handlePanMove}
