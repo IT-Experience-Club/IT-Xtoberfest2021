@@ -1,6 +1,7 @@
 const Express = require('express')
 
 const App = Express()
+const PORT = process.env.PORT || 2021
 const LIMIT_RND_PER_REQ = 30
 // A list of available dice https://en.wikipedia.org/wiki/Dice#Rarer_variations
 const DICE_AVAILABLE = [
@@ -32,6 +33,10 @@ function rollDice(min, max) {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+App.get('/', (req, res) => {
+    res.send("Hello, World!")
+})
 
 App.get('/roll', (req, res) => {
     const rollResult = []
@@ -71,6 +76,6 @@ App.get('/xroll/:faces/:times', (req, res) => {
     res.json(rollResult)
 })
 
-App.listen(2021, () => {
-    console.log(`API listen on http://localhost:2021`)
+App.listen(PORT, () => {
+    console.log(`API listen on http://localhost:${PORT}`)
 })
