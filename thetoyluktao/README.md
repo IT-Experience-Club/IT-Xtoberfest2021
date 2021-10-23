@@ -1,5 +1,7 @@
 # The ทอยลูกเต๋า
 
+<https://thetoyluktao.herokuapp.com>
+
 API ทอยลูกเต๋าด้วยหน้าที่มีจริงๆ แบบ Psudorandom
 
 ## วิธีใช้งาน
