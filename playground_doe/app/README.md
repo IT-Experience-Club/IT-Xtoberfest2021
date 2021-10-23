@@ -2,7 +2,7 @@
 
 ```demo``` https://hello-any.netlify.app/
 
-This is only a stupid hack for hacktoberfest (ITExperience). Concept inspired by [Manoonchai/Daimai](https://github.com/Manoonchai).
+This is only a stupid hack for hacktoberfest (ITExperience). Concept inspired by [narze](https://github.com/narze/DaiMai).
 
 ---
 
