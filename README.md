@@ -8,12 +8,12 @@
 3. หลังจากนั้นก็กรอกข้อมูลลงในไฟล์ตามรูปแบบดังนี้
     ```json
     {
-      "Name": "Jeremy",
-      "Occupation": "Student",
-      "UserName": "pp3times",
+      "Name": "ชื่อของเรา Ex. ปิติ",
+      "Occupation": "อาชีพของเรา Ex. Student",
+      "UserName": "Username ของเรา Ex. pitiza007",
       "JoinedTheRepo": true,
-      "folder": "EIEI how much EIEI",
-      "Quote": "The best revenge is massive success."
+      "folder": "ชื่อ Folder ใน Repo ของเรา Ex. project cool cool by piti",
+      "Quote": "คำคมสุดเท่ Ex. I love Manee"
     }
     ```
 4. หลังจากนั้นสร้าง Pull Request
