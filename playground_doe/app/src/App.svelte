@@ -63,17 +63,25 @@
   }
 
   import { time, elapsed } from "./component/stores";
-
+  import GradientText from 'svelte-gradient-typography';
 </script>
 
 <main>
   <div class="wrapBox">
     <div class="helloBox">
-      <h1>Hello&nbsp;</h1>
+	<!-- svelte-ignore missing-declaration -->
+	<GradientText style="font-size:2rem;">
+      Hello&nbsp;
+	</GradientText>
+
       {#if stuff_list[stuff_id] != undefined}
-        <h1 class="">
-          {stuff_list[stuff_id]}
-        </h1>
+        <!-- svelte-ignore missing-declaration -->
+        <GradientText
+			style="font-size:2rem;"
+			gradient="linear-gradient(90deg, rgb(67, 174, 255) 5%, rgb(160, 131, 237) 25%, rgb(239, 122, 200) 50%, rgb(254, 134, 159) 85%,rgb(255, 167, 69) 130%)"
+		>
+		{stuff_list[stuff_id]}
+        </GradientText>
       {:else}
         <div class="flex justify-center items-center">
           <div class="" />
@@ -136,12 +144,6 @@
     max-width: 240px;
     margin: 0 auto;
   }
-  h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 100;
-  }
 
   .time {
     padding: 1rem;
@@ -172,7 +174,7 @@
   }
 
   .wrapBox .helloBox {
-    margin: auto;
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -193,10 +195,6 @@
   @media (max-width: 800px) {
     main {
       max-width: 500px;
-    }
-    .helloBox h1 {
-      font-size: 1.5rem;
-      font-weight: 500;
     }
     .time {
       display: none;
