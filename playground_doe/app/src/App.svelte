@@ -93,6 +93,8 @@
 				rotate({$coords.x * 0.2}deg)"
 			>
 			Random</button>
+
+			<p class="hint"><b>drag this button</b></p>
 		<div class="timeIsmobile">
 			<h6>
 				You have been checking out my project for
@@ -155,7 +157,7 @@
 	}
 
 	.wrapBox{
-		padding: 5rem 0;
+		padding: 10rem 0 0 0;
 		margin: 2rem 0;
 	}
 
@@ -180,6 +182,7 @@
 		}
 		.helloBox h1{
 			font-size: 1.5rem;
+			font-weight: 500;
 		}
 		.time{
 			display: none;
@@ -190,6 +193,9 @@
 		}
 		.timeIsmobile h6{
 			font-size: small;
+		}
+		.hint{
+			display: none;
 		}
 	}
 </style>
