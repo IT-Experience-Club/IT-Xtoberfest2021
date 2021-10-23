@@ -24,20 +24,22 @@ npm run build
 
 Yon can directly add something to this list.
 
-- Jabont
-- Contributors
-- Hackers
-- Soy sauce packet
-- Ex-girlfriend
-- Cupid
-- PR
-- Professor
-- Dumbledore
-- World
+- , Jabont
+- , Contributors
+- , Hackers
+- , Crocodile
+- , Ex-girlfriend
+- , Daddy ;)
+- , Cupid
+- , PR
+- , Professor
+- , Dumbledore
+- , World !
 - , Goodbye
 - , Don't touch me
-- Alien
-- Boys
+- , Alien
+- , Boys
 - , Down to eat?
-- Dracula
+- , Dracula
 - , Can I commit?
+- , Dummy !

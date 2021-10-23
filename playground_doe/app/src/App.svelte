@@ -71,7 +71,7 @@
     <div class="helloBox">
 	<!-- svelte-ignore missing-declaration -->
 	<GradientText style="font-size:2rem;">
-      Hello&nbsp;
+      Hello
 	</GradientText>
 
       {#if stuff_list[stuff_id] != undefined}
