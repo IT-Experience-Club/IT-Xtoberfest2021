@@ -26,7 +26,7 @@ Yon can directly add something to this list.
 
 - Jabont
 - Contributors
-- Hack
+- Hackers
 - Soy sauce packet
 - Ex-girlfriend
 - Cupid
