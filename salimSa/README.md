@@ -1,5 +1,5 @@
 # SalimSa
-![ตัวอย่างเพี้ยวๆ](https://cdn.discordapp.com/attachments/901469820720123974/901471715396309062/2021-10-23_21-03-50.gif)
+![ตัวอย่างเพี้ยวๆ](https://cdn.discordapp.com/attachments/901469820720123974/901480633707139122/unknown.png)
 SalimSa เป็น Project ที่พัฒนาเพื่อเข้าร่วมงาน IT-Xoberfest 2021 ด้วยใช้ Discord.js กับ [awesome-salim-quotes API](https://github.com/narze/awesome-salim-quotes)
 
 > ปล. Project นี่ไม่มีเจตนาสร้างความแตกแยกหรือสร้างความเกลียดชังแต่อย่างใด อยากให้ทุกคนมองเป็นการสร้างสีสันและความตลก หากทำให้ใครไม่พอขอโทษด้วยนะครับ
