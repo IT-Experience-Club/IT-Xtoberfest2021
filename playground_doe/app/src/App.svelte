@@ -27,8 +27,8 @@
     const data_text = await res.text()
     stuff_list = data_text
       .split("\n")
-      .filter((line) => line.startsWith("- "))
-      .map((line) => line.split("- ")[1])
+      .filter((line) => line.startsWith("    - "))
+      .map((line) => line.split("    - ")[1])
     const urlParams = new URLSearchParams(window.location.search)
     const id = parseInt(urlParams.get("id"))
     if (id != null && id < stuff_list.length) {
@@ -42,7 +42,7 @@
 <main>
 	<div class="container">
 		<div class="helloBox">
-			<h1>Hello</h1> &nbsp;
+			<h1>Hello &nbsp;</h1>
 			{#if stuff_list[stuff_id] != undefined}
 			  <h1 class="">
 				{stuff_list[stuff_id]}
