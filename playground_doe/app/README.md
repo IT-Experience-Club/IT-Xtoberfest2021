@@ -18,3 +18,16 @@ To create an optimised version of the app:
 ```bash
 npm run build
 ```
+
+## List of stuff to say hello to
+
+Yon can directly add something to this list.
+
+    - Jabont
+    - Contributors
+    - Hack
+    - Soy sauce packet
+    - Ex-girlfriend
+    - Cupid
+    - PR
+
