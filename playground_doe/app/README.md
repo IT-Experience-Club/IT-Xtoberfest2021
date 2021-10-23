@@ -29,12 +29,20 @@ Yon can directly add something to this list. ```text only```
 - Jabont
 - Contributors
 - Hackers
+- My Team!
 - Crocodile
-- Ex-girlfriend
 - Daddy ;)
 - Cupid
 - PR
 - Professor
+- Harry
+- John Doe
+- Sleepy?
+- Mama
+- Queen
+- Lover boy
+- Kitty
+- Puppy
 - Dumbledore
 - World !
 - Goodbye
@@ -45,4 +53,7 @@ Yon can directly add something to this list. ```text only```
 - Dracula
 - Can I commit?
 - Dummy !
+- Zombie
+- Eve
+- Detective
 - Lucifer
