@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ฉันควรทำอะไรดี</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<main>
+		<h1 class="title">ฉันควร...ดีไหม? </h1>
+		<div class="text-typed">
+			<span id="typed"></span>
+		</div>
+		<div class="container">
+			<input class="text-input" type="text" placeholder="ฉันควร...ดีไหม?" required>
+			<div class="btn-submit" onClick="play()">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+					<path fill-rule="evenodd"
+						d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+						clip-rule="evenodd" />
+				</svg>
+			</div>
+		</div>
+		<script src="./script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"
+			integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ=="
+			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		<script>
+			var typed = new Typed('#typed', {
+				stringsElement: '#typed-strings',
+				strings: ['ฉันควรนอนดีไหม?', 'ฉันควรอ่านหนังสือดีไหม?', 'ฉันควรเขียนโค้ดดีไหม?', 'ฉันควรกินข้าวดีไหม?', 'ฉันควรนอนดีไหม?'],
+				typeSpeed: 80,
+				loop: true,
+				loopCount: Infinity,
+				fadeOut: true,
+				fadeOutClass: 'typed-fade-out',
+				fadeOutDelay: 500,
+				cursorChar: ' |',
+			});
+
+		</script>
+</body>
+</html>
