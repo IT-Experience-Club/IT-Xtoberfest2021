@@ -76,6 +76,13 @@ App.get('/xroll/:faces/:times', (req, res) => {
     res.json(rollResult)
 })
 
+App.get('/rickroll', (req, res) => {
+    res.writeHead(301, {
+        Location: 'https://youtu.be/dQw4w9WgXcQ'
+    })
+    res.end()
+})
+
 App.listen(PORT, () => {
     console.log(`API listen on http://localhost:${PORT}`)
 })
