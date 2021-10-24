@@ -11,6 +11,7 @@ function set_dokmai() {
 	flowerLeaf.innerHTML = flowerLeafHTML
 	edok = document.querySelector('#edok')
 	edok.style.setProperty('--total',total)
+	edok.style.opacity = 1;
 	setTimeout(()=>{
 		count = 0;
 		ded = setInterval(()=>{
