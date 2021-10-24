@@ -1,15 +1,23 @@
-guest = prompt('สวัสดี คุณชื่ออะไร')
-console.log(`user ชื่อว่า `+guest)
-
 function play(){
-	menu = ['กะเพราไก่','มาม่าสับ','ไข่เจียว']
-	menuSize = menu.length
-	rand = Math.floor(Math.random() * menuSize)
+	//ซ่อนอันแรก
+	cookie1.classList.add('cookie-hide')
+	//แสดงอันสอง
+	cookie2.classList.add('cookie-show')
+	//เปลี่ยนตัวหนังสือ
+	fortune.innerText = ranDomKamTamNai()
+	//แสดงตัวหนังสือ แบบหน่วงเวลา 300 millisecond 
+	setTimeout(function(){
+		fortune.style.opacity = 1	
+	},2500)
+}
 
-	console.log(`สุ่มได้เลข ${rand}`)
-
-	food = menu[rand]
-	alert(`คุณ ${guest} ควรจะลองทาน ${food}`)
-
-	console.log(`รอบนี้ได้กิน ${food}`)
+function ranDomKamTamNai(){
+	KamTamNai = [
+	'วันนี้อากาศสดชื่น คุณควรออกจากบ้าน แล้วกลับมาติดโควิดนะคะ',
+	'ฟ้าฝนไม่เป็นใจ ชวนใครมาห้อง ก็คงไม่ได้ดู Netflix and Chill',
+	'อย่าคุยกับทีละป็อป เพราะเป็นคนน่ารักเกินไป',
+	'พี่ไอซ์ 16 โคดเมพเลยค้าบ ลุกเพ่'
+	]
+	selectKamTamNai = KamTamNai[Math.floor(Math.random() * KamTamNai.length)]
+	return selectKamTamNai
 }
