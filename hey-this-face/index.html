@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polygon</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(170, 167, 162);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        svg {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .layer {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            fill-opacity: 1;
+            transition: all 1s;
+            animation: dash 50s linear forwards;
+        }
+
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <svg viewBox="-7.5 0 55 55">
+
+        <path class="layer" id="1" d="M16 4.2 L22 3.5 L22.5 4.9 L19.8 5.3 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#7e6d49" />
+        <path class="layer" id="2" d="M12.5 5.5 L16.8 7 L16 4.2 Z" stroke="#1e1e1e" stroke-width=".07" fill="#8e7951" />
+        <path class="layer" id="3" d="M16.8 7 L19.8 5.3 L16 4.2 Z" stroke="#1e1e1e" stroke-width=".07" fill="#745f37" />
+        <path class="layer" id="4" d="M19.8 5.3 L20.8 8.5 L22.2 10.1 L22.5 4.9 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#61522f" />
+        <path class="layer" id="5" d="M22 3.5 L22.5 4.9 L26.2 8 L27.3 6.1 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#6a5e44" />
+        <path class="layer" id="6" d="M12.5 5.5 L9.3 8 L9.3 11.1 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#7e6741" />
+        <path class="layer" id="7" d="M9.3 11.1 L13.1 11.7 L12.5 5.5 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#6a5227" />
+        <path class="layer" id="8" d="M12.5 5.5 L13.1 11.7 L16.8 7 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#725b33" />
+        <path class="layer" id="9" d="M16.8 7 L18.7 9 L18.3 10.3 L14.8 9.5 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#6e5b37" />
+        <path class="layer" id="10" d="M19.8 5.3 L20.8 8.5 L19.3 11.7 L17.5 11 L14.8 11.2 L14.8 9.5 L18.3 10.3 Z"
+            stroke="#1e1e1e" stroke-width=".07" fill="#66532f" />
+        <path class="layer" id="11" d="M16.8 7 L18.7 9 L19.8 5.3 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#74613b" />
+        <path class="layer" id="12" d="M22.5 4.9 L22.2 10.1 L24.3 11.2 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#6c5b38" />
+        <path class="layer" id="13" d="M24.3 11.2 L26.2 8 L22.5 4.9 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#665739" />
+        <path class="layer" id="14" d="M9.3 8 L9.4 13.5 L8 12.5 L8 9.8 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#675229" />
+        <path class="layer" id="15" d="M9.3 11.1 L9.4 13.5 L13.1 11.7 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#573f0e" />
+        <path class="layer" id="16" d="M13.1 11.7 L14.8 13.5 L14.8 9.5 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#5a4219" />
+        <path class="layer" id="17" d="M14.8 11.2 L14.8 12.2 L18.8 12.9 L17.5 11 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#553f1a" />
+        <path class="layer" id="18_19" d="M17.5 11 L18.8 12.9 L20.7 14.7 L22.2 10.1 L20.8 8.5 L19.3 11.7 Z"
+            stroke="#1e1e1e" stroke-width=".07" fill="#5b4927" />
+        <path class="layer" id="20" d="M22.2 10.1 L24.3 11.2 L23.5 12 L27 14.8 L20.7 14.7 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#655337" />
+        <path class="layer" id="21" d="M24.3 11.2 L29.4 12.2 L29.3 16.6 L23.5 12 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#60553d" />
+        <path class="layer" id="22" d="M27.3 6.1 L24.3 11.2 L31.2 12.6 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#5e543c" />
+        <path class="layer" id="23" d="M27.3 6.1 L 31.2 12.6 L30.7 7.8 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#6d634f" />
+        <path class="layer" id="24_36" d="M8 9.8 L5.8 12.6 L4.7 15.3 L5.9 17.1 L8 12.5 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#6e664a" />
+        <path class="layer" id="25" d="M8 12.5 L9.4 13.5 L7.5 18.1 L5.9 17.1 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#4b3c18" />
+        <path class="layer" id="26" d="M9.4 13.5 L7.5 18.1 L9.9 19 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#3b2b07" />
+        <path class="layer" id="27" d="M9.4 13.5 L13.1 11.7 L14.8 13.5 L9.5 14.8 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#4b3203" />
+        <path class="layer" id="28" d="M14.8 12.2 L14.8 13.5 L17.2 17 L20.7 14.7 L18.8 12.9 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#4e3811" />
+        <path class="layer" id="29" d="M17 19.6 L21.5 17 L20.7 14.7 L17.2 17 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#49320e" />
+        <path class="layer" id="30" d="M20.7 14.7 L27 14.8 L25.8 17.6 L22.3 18 L21.5 17 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#5e4d35" />
+        <path class="layer" id="31" d="M27 14.8 L25.8 17.6 L27.2 21.7 L29.3 20.5 L29.3 16.6 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#716353" />
+        <path class="layer" id="32" d="M29.4 14.2 L29.3 20.5 L31.5 17.4 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#7b6b57" />
+        <path class="layer" id="33" d="M31.2 12.6 L33.2 20 L29.4 14.2 L29.4 12.2 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#716650" />
+        <path class="layer" id="34" d="M30.7 7.8 L31.2 12.6 L34.6 13.5 L34.5 11 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#8c7b5f" />
+        <path class="layer" id="35" d="M31.2 12.6 L33.2 20 L34.6 13.5 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#8c7f64" />
+        <path class="layer" id="37" d="M7.5 18.1 L5.9 17.1 L4.7 15.3 L4.7 18.9 L5.3 21.2 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#6e664a" />
+        <path class="layer" id="38" d="M7.5 18.1 L5.3 21.2 L6.8 24 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#5c5844" />
+        <path class="layer" id="39" d="M7.5 18.1 L6.8 24 L8.7 23.5 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#554a3a" />
+        <path class="layer" id="40" d="M9.9 19 L7.5 18.1 L8.7 23.5 L10.5 23.2 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#3f331d" />
+        <path class="layer" id="41" d="M9.5 14.8 L14.8 13.5 L13.5 19 L11.3 16.8 L9.8 18 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#3c2600" />
+        <path class="layer" id="42_43" d="M14.8 13.5 L17.2 17 L17 19.6 L16 21 L14.2 20.1 L13.5 19 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#322008" />
+        <path class="layer" id="44" d="M18 21.2 L14 23.6 L10.5 23.2 L14.2 20.1 L16 21 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#362002" />
+        <path class="layer" id="45_46" d="M9.8 18 L10 20 L10.5 23.2 L14.2 20.1 L13.5 19 L11.3 16.8 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#3f2a00" />
+        <path class="layer" id="47_49" d="M26 22 L16 21 L17 19.6 L18.2 18.9 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#362002" />
+        <path class="layer" id="48_50" d="M25.8 17.6 L27.2 21.7 L26 22 L18.2 18.9 L21.5 17 L22.3 18 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#564127" />
+        <path class="layer" id="51_52" d="M27.2 21.7 L29.3 20.5 L31.5 17.4 L33.2 20 L33.8 20.5 L32 22 L26 24 Z"
+            stroke="#1e1e1e" stroke-width=".07" fill="#a78d71" />
+        <path class="layer" id="53" d="M34.6 13.5 L33.2 20 L33.8 20.5 L34.9 19.4 L35.6 15.5 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#bdab86" />
+        <path class="layer" id="54" d="M34.5 11 L34.6 13.5 L37.2 18.5 L37.3 15.5 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#c0b49f" />
+        <path class="layer" id="55" d="M35.6 15.5 L37.2 18.5 L36 22.4 L34.9 19.4 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#d2c8b9" />
+        <path class="layer" id="56" d="M32 22 L34.9 19.4 L36 22.4 L33.4 25.9 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#ccb290" />
+        <path class="layer" id="57" d="M32 22 L26 24 L31.8 25.5 Z" stroke="#1e1e1e" stroke-width=".07" fill="#c7a886" />
+        <path class="layer" id="58" d="M32 22 L33.4 25.9 L31.6 29.2 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#ac998d" />
+        <path class="layer" id="59" d="M25 26 L30.5 27.5 L31.8 25.5 L26 24 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#a68f80" />
+        <path class="layer" id="60_61" d="M27.2 21.7 L25 26 L22.8 25.8 L21.6 23 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#786152" />
+        <path class="layer" id="62_63" d="M26 22 L21.6 23 L21.9 23.9 L17.3 27.5 L18.4 23 L15.8 22.6 L18 21.2 Z"
+            stroke="#1e1e1e" stroke-width=".07" fill="#583c28" />
+        <path class="layer" id="64" d="M17.3 27.5 L18.4 23 L15.8 22.6 L14 23.6 L15 26 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#5d3c23" />
+        <path class="layer" id="65" d="M14 23.6 L15 26 L11 25 Z" stroke="#1e1e1e" stroke-width=".07" fill="#4c311b" />
+        <path class="layer" id="66" d="M11 25 L8.7 23.5 L10.5 23.2 L14 23.6 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#60452e" />
+        <path class="layer" id="67" d="M11 25 L8.7 23.5 L9.5 26.8 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#765a48" />
+        <path class="layer" id="68" d="M8.7 23.5 L7.4 29.2 L10.3 30 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#9b7666" />
+        <path class="layer" id="69" d="M8.7 23.5 L7.4 29.2 L6.8 25.5 L6.8 24 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#826152" />
+        <path class="layer" id="70" d="M5.8 22.2 L6.3 23.1 L5.8 28.4 h-1 v-1.5 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#6b6a69" />
+        <path class="layer" id="71" d="M4.8 28.4 L4 29.5 L6.3 33.6 L7 30 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#4b4b4b" />
+        <path class="layer" id="72" d="M4.8 28.4 L7.5 30.4 L10.3 30 L7.4 29.2 L5.8 28.4 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#5b5958" />
+        <path class="layer" id="73" d="M6.3 33.5 L7 30.1 L12 33 L12.6 36 L8 35 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#4a3f3d" />
+        <path class="layer" id="74" d="M7.5 30.4 L12 33 L16 31 L10.3 30 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#342e2c" />
+        <path class="layer" id="75" d="M9.5 26.8 L10.3 30 L16 31 L17.3 27.5 L15 26 L11 25 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#834f37" />
+        <path class="layer" id="79" d="M17.3 27.5 L16 31 L19.5 31.8 L18.6 26.5 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#935d45" />
+        <path class="layer" id="80" d="M18.6 26.5 L19.1 29.5 L21.8 29 L22.8 25.8 L21.9 23.9 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#92644e" />
+        <path class="layer" id="81" d="M21.8 29 L26.4 31.5 L29.7 27.3 L25 26 L22.8 25.8 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#ab7a6a" />
+        <path class="layer" id="85" d="M26.4 31.5 L29.7 27.3 L30.5 27.5 L31.8 25.5 L31.5 31.2 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#c49c8e" />
+        <path class="layer" id="86" d="M19.1 29.5 L19.5 31.8 L26.4 31.5 L21.8 29 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#b57d62" />
+        <path class="layer" id="87" d="M33.4 25.9 L33 26.7 L33.5 28 L34 31 L35 30.7 L34.2 28 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#837c7b" />
+        <path class="layer" id="88" d="M16 31 L12 33 L16.8 33.2 Z" stroke="#1e1e1e" stroke-width=".07" fill="#302520" />
+        <path class="layer" id="89" d="M12 33 L12.6 36 L14.5 36.3 L16.3 36 L17.1 35.1 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#554e4b" />
+        <path class="layer" id="90" d="M16.8 33.2 L12 33 L17.1 35.1 L19 33.1 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#3a322f" />
+        <path class="layer" id="91" d="M16 31 L16.8 33.2 L20.5 33 L19.5 31.8 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#403c3b" />
+        <path class="layer" id="92" d="M19.5 31.8 L21 33.6 L26.4 31.5 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#474242" />
+        <path class="layer" id="93" d="M26.4 31.5 L30 31.3 L27.6 33 L24 32.5 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#4b3f3d" />
+        <path class="layer" id="94" d="M30 31.3 L34 31 L33 33 L27.6 33 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#4b4746" />
+        <path class="layer" id="95" d="M33 33 L34 31 L35.1 30.7 L35.5 31.5 L35 33 L33.5 33.9 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#484747" />
+        <path class="layer" id="96" d="M33.5 33.9 L32 36 L28.3 34.5 L31 33 L33 33 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#3c3838" />
+        <path class="layer" id="97_98" d="M31 33 L28.3 34.5 L24 32.5 L27.6 33 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#2b2725" />
+        <path class="layer" id="99" d="M24 32.5 L28.3 34.5 L23.7 37 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#3a2e2a" />
+        <path class="layer" id="100" d="M24 32.5 L23.7 37 L21.9 35.5 L21 33.6 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#483d38" />
+        <path class="layer" id="101" d="M23.7 37 L28.3 34.5 L32 36 L29 36.7 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#342c26" />
+        <path class="layer" id="102"
+            d="M14.5 36.3 L16.3 36 L17.1 35.1 L19 33.1 L20.5 33 L19 38.2 L17.5 37.3 L15.3 37.4 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#b1715c" />
+        <path class="layer" id="103" d="M20.5 33 L21 33.6 L21.9 35.5 L23.7 37 L22.6 37.9 L21 37.5 L19 38.2 Z"
+            stroke="#1e1e1e" stroke-width=".07" fill="#cf8c75" />
+        <path class="layer" id="104" d="M8 35 L9.6 39.7 L14.5 36.3 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#9c6f5b" />
+        <path class="layer" id="105" d="M14.5 36.3 L12.1 43.8 L9.6 39.7 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#93664d" />
+        <path class="layer" id="106"
+            d="M14.5 36.3 L15.3 37.4 L16.2 38 L18 37.6 19 38.2 L17.6 41.3 L14.3 40.8 L13.2 40.2 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#985c42" />
+        <path class="layer" id="107" d="M19 38.2 L17.5 37.3 L15.3 37.4 L16.2 38 L18 37.6 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#834737" />
+        <path class="layer" id="108" d="M22.2 38.5 L22.6 37.9 L21 37.5 L19 38.2 L20.9 38 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#935242" />
+        <path class="layer" id="109" d="M19 38.2 L17.6 41.3 L19.3 41.7 L21 41 L23 41.3 L24.5 40.5 L22.2 38.5 L20.9 38 Z"
+            stroke="#1e1e1e" stroke-width=".07" fill="#b5755a" />
+        <path class="layer" id="110" d="M29.2 39 L27.6 41 L24.5 40.5 L22.2 38.5 L22.6 37.9 L23.7 37 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#c08a6f" />
+        <path class="layer" id="111" d="M23.7 37 L29.2 39 L30 36.5 L29 36.7 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#987566" />
+        <path class="layer" id="112" d="M13.2 40.2 L12.1 43.8 L13.8 46.6 L16 48.4 L18.3 43.8 L17.2 43.7 L15 43 Z"
+            stroke="#1e1e1e" stroke-width=".07" fill="#906147" />
+        <path class="layer" id="113" d="M13.2 40.2 L19.3 41.7 L17.2 43.7 L15 43 Z" stroke="#1e1e1e" stroke-width=".07"
+            fill="#803e2d" />
+        <path class="layer" id="114"
+            d="M13.2 40.2 L14.3 40.8 L17.6 41.3 L19.3 41.7 L21 41 L23 41.3 L19.4 42.7 L15.5 42 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#8e4637" />
+        <path class="layer" id="115" d="M23 41.3 L19.4 42.7 L15.3 41.9 L17.2 43.7 L19.6 44 L22 43 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#9d5140" />
+        <path class="layer" id="116" d="M18.3 43.8 L16 48.4 L18.5 48.8 L20 48.6 L20.1 43.8 L19.6 44 Z" stroke="#1e1e1e"
+            stroke-width=".07" fill="#9f6d50" />
+        <path class="layer" id="117" d="M24.5 40.5 L23 41.3 L22 43 L20.1 43.8 L20 48.6 L22 47.5 L27.6 41 Z"
+            stroke="#1e1e1e" stroke-width=".07" fill="#a77658" />
+
+    </svg>
+
+    <!-- <img src="https://media.discordapp.net/attachments/797048520703606784/840605374682890261/S__917537.jpg?width=222&height=480"
+        alt="source"> -->
+
+    <script>
+        let i;
+        const layer = document.querySelectorAll('.layer');
+
+        for (let i = 0; i < 101; i++) {
+            layer[i].style.animationDelay = (i * 0.04) + "s";
+            layer[i].style.fill = "#fff";
+        }
+        setTimeout(() => {
+            for (i = 0; i < 101; i++) {
+                layer[i].style.fill = "";
+                layer[i].style.stroke = "#1e1e1e7f";
+            }
+            for (i = 0; i < 101; i++) {
+                layer[i].onmouseover = function () {
+                    this.style.fillOpacity = "0.3";
+                    this.style.stroke = "red";
+                    this.style.fill = "#000";
+                    this.style.transform = "scale(1.1)";
+                    setTimeout(() => {
+                        this.style.fillOpacity = "1";
+                        this.style.fill = "";
+                        this.style.stroke = "#1e1e1e7f";
+                        this.style.transform = "scale(1)";
+                    }, 1000);
+                }
+
+            }
+        }
+            , 5000);
+
+    </script>
+
+</body>
+
+</html>

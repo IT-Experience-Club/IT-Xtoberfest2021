@@ -1,0 +1,16 @@
+{
+  "name": "salim-sa",
+  "version": "0.0.1",
+  "description": "This Project is make for fun in IT-Xtoberfest2021 #1",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "C0M3TZZ",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "discord.js": "^13.2.0",
+    "dotenv": "^10.0.0"
+  }
+}
