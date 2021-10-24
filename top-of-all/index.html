@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Left or Right</title>
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://jabont.com/jayss/jayss2.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+</head>
+<body class="padding-vl mob-padding-rm">
+
+	<div style="max-width: 600px;margin: auto;">
+		<h1 class="t-center">ฝั่งไหนที่คุณชอบมากกว่า?</h1>
+		<div id="battle">
+			<sp class="vl"></sp>
+			<theboxes class="top spacing-l -clip mob-size-s" boxing="2" mob="2">
+				<box col=""><inner class="">
+					<div id="card-win" class="t-center"  style="display: none;"><i class="fas cl-amber size-vl fa-crown"></i></div>
+					<div id="card-new1" class="t-center"><i class="size-vl fas fa-fist-raised cl-grey fa-rotate-90"></i></div>
+					<sp class=""></sp>
+					<div id="card1" class="padding-l bg-grey-2 round shadow t-center pointer  mob-padding-m" onclick="next(1)"></div>
+				</inner></box>
+				<box col=""><inner class="">
+					<div id="card-new-1" class="t-center"><i class="size-vl fas fa-fist-raised cl-grey fa-rotate-270"></i></div>
+					<sp class=""></sp>
+					<div id="card-1" class="padding-l bg-grey-2 round shadow t-center pointer mob-padding-m" onclick="next(-1)"></div>
+				</inner></box>
+			</theboxes>
+			<sp class="vl"></sp>
+		</div>
+		<div class="padding-l padding shadow">
+			<h2>ผลสรุปลำดับของคุณ</h2><sp></sp>
+			<div  id="win"></div>
+		</div>
+	</div>
+	
+	
+	<script type="text/javascript">
+		let win = []
+		let maxWin = 10
+		let candidate = [
+		'ชาติโยดม',
+		'ใบปอ',
+		'ปอนด์',
+		'แม็ค',
+		'ปาล์มมี่',
+		'คิว',
+		'ติณ',
+		'ภูมิ',
+		'โด',
+		'ซันซัน',
+		'เบ',
+		'เบนซ์',
+		'ตง'
+		]
+		let battle = []
+		candidate = shuffleArray(candidate)
+		console.log('candidate')
+		console.log(candidate)
+		let sort = {}
+		for(let i of candidate){
+			sort[i] = {}
+		}
+		console.log(sort)
+		let lastWin = null
+		function card(val){
+			return document.querySelector('#card'+val)
+		}
+		function next(val){
+			candidate.splice(0,1)
+			let w = card(val).innerText
+			let l = card(val*-1).innerText
+			console.log(`w : ${w}`)
+			console.log(`l : ${l}`)
+			battle.push(`${w} x ${l}`)
+			lastWin = w
+			sort[w][l] = sort[l]
+			console.log(sort)
+			if (candidate.length>0) {
+				card(1).innerText = lastWin
+				card(-1).innerText = candidate[0]
+				card('-win').style.display = 'block'
+				card('-new1').style.display = 'none'
+			}else{
+				win.push(lastWin)
+				console.log(`--- Round ${win.length} ---`)
+				console.log(win)
+				nextRound()
+			}
+
+		}
+		newFace()
+
+		function shuffleArray(array) {
+			for (let i = array.length - 1; i > 0; i--) {
+				const j = Math.floor(Math.random() * (i + 1));
+				[array[i], array[j]] = [array[j], array[i]];
+			}
+			return array
+		}
+		function nextRound(){
+			if (win.length<maxWin) {
+				putWinner()
+				candidate = []
+				for(let i in sort[lastWin]){
+					candidate.push(i)
+				}
+				if (candidate.length == 1) {
+					lastWin = candidate[0]
+					win.push(lastWin)
+					nextRound()
+
+				}else{
+					candidate = shuffleArray(candidate)
+					console.log('candidate')
+					console.log(candidate)
+					newFace()
+				}
+			}
+			else{
+				putWinner()
+				document.querySelector('#battle').outerHTML = "";
+				console.log(win)
+				console.log(sort)
+			}
+		}
+		function newFace(){
+			card('-win').style.display = 'none'
+			card('-new1').style.display = 'block'
+			card(1).innerText = candidate[0]
+			card(-1).innerText = candidate[1]
+			candidate.splice(0,1)
+		}
+		function putWinner(){
+			document.querySelector('#win').innerHTML += `<h3><span class="cl-amber">อันดับ ${win.length} – </span>${win[win.length-1]}</h3><sp class="s"></sp>`
+		}
+	</script>
+
+</body>
+</html>
