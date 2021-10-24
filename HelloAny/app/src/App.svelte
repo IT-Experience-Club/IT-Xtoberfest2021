@@ -18,7 +18,7 @@
   };
   onMount(async () => {
     const res = await fetch(
-      `https://raw.githubusercontent.com/santhitak/IT-Xtoberfest2021/main/playground_doe/app/README.md`
+      `https://raw.githubusercontent.com/IT-Experience-Club/IT-Xtoberfest2021/main/HelloAny/app/README.md`
     );
     const data_text = await res.text();
     stuff_list = data_text
