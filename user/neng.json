@@ -3,6 +3,9 @@
     "Occupation": "Student",
     "UserName": "nengapi",
     "JoinedTheRepo": true,
-    "folder": "dinotype",
+    "folder": [
+        "dinotype",
+        "hey this face"
+    ],
     "Quote": "Because you are alive, everything is possible."
 }
