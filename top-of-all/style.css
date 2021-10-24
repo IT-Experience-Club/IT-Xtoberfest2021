@@ -1,0 +1,17 @@
+:root{
+	--ci1: #000;
+	--ci2: #666;
+	--ci3: #888;
+	--link: var(--ci1);
+	--link-hover: var(--ci2);
+	--btn-bg: var(--ci1);
+	--btn-bg-hover: var(--ci2);
+	--nav-link: var(--ci1);
+	--nav-hover: var(--ci2);
+	--bg-color: #fff;
+	--text-color: #333;
+	--box-shadow: 0 20px 25px -5px rgba(150,150,180,.1),0 10px 10px -5px rgba(150,150,180,.07);
+	--round: 5px;
+	--pmr-font: var(--font-noto);
+	--txt-font: var(--font-sans);
+}
