@@ -7,19 +7,29 @@
     <title>Random First Name</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
+<style>
+    .animate{
+        animation: bounce .12s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes bounce {
+        0%,100% { transform: translateY(0px)  }
+        50% { transform: translateY(20px) }
+    }
+</style>
 <body class="bg-gray-300">
     <div class="container mx-auto ">
-        <div id="header" class="flex justify-center">
+        <div id="header" class="flex justify-center p-10">
             <h1 class="text-3xl font-bold">Let's random some first name</h1>
         </div>
-        <div id="button" class="flex justify-center p-10">
+        <div id="button" class="flex justify-center">
             <a class="bg-black text-white p-4 rounded cursor-pointer" onclick="random_name()">Random</a>
         </div>
         <div id="result" class="flex justify-center items-center p-40">
-            <h2 id="result_text" class="text-9xl"></h2>
+            <h2 id="result_text" class="text-8xl"></h2>
         </div>
     </div>
-    
+
     <script>
         const random_name = ()=>{
 
@@ -30,8 +40,14 @@
             document.getElementById('result_text').innerText = names[random_num]
         }
 
-
-        
+        var btn = document.getElementById('button');
+        var text = document.getElementById('result');
+        btn.onclick = function(event){
+            text.classList.add('animate');
+            setTimeout(function(){
+                text.classList.remove('animate');
+            }, 150);
+        }
     </script>
 </body>
 </html>
