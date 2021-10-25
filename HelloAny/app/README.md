@@ -24,7 +24,7 @@ npm run build
 
 ## List of stuff to say hello to
 
-Yon can directly add something to this list. ```text only```
+Yon can add stuff here [santhitak/HelloAny](https://github.com/santhitak/HelloAny).
 
 - Jabont
 - Contributors
