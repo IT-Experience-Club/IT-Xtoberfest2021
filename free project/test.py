@@ -6,5 +6,6 @@ def greeting():
     age = int(input("Then how old are you?"))
     print("%d years old(s)" %age)
     print("Nice to meet ya!!!!!")
+    print("To be continue")
 print("test")
 greeting()
