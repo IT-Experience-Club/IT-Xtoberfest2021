@@ -16,7 +16,8 @@ function ranDomKamTamNai(){
 	'วันนี้อากาศสดชื่น คุณควรออกจากบ้าน แล้วกลับมาติดโควิดนะคะ',
 	'ฟ้าฝนไม่เป็นใจ ชวนใครมาห้อง ก็คงไม่ได้ดู Netflix and Chill',
 	'อย่าคุยกับทีละป็อป เพราะเป็นคนน่ารักเกินไป',
-	'พี่ไอซ์ 16 โคดเมพเลยค้าบ ลุกเพ่'
+	'พี่ไอซ์ 16 โคดเมพเลยค้าบ ลุกเพ่',
+	'อยากจะซิ่ง ก็ต้องชิ่งก่อนนะ ;)'
 	]
 	selectKamTamNai = KamTamNai[Math.floor(Math.random() * KamTamNai.length)]
 	return selectKamTamNai
