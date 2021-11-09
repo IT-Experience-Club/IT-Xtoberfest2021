@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random name by thun</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body class="h-screen w-screen flex flex-col justify-center items-center">
+    <div id="showname" class="text-5xl animate__animated animate__flipInY animate__slow"></div>
+    <div class="rounded-lg shadow-md flex flex-col items-center p-5 w-1/3 mt-10">
+        <div class="text-4xl">Random Name</div>
+        <button class="shadow-md rounded-full p-2 px-6 mt-5 hover:bg-gray-100 hover:shadow-xl" onclick="location.reload();">click me</button>
+    </div>
+    <script>
+        fetch('https://randomuser.me/api/')
+            .then(response => response.json())
+            .then(data => {
+                let show = document.getElementById("showname").innerHTML = `" ${data.results[0].name.first} "`
+            });
+    </script>
+</body>
+
+</html>
